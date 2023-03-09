@@ -1,4 +1,4 @@
-# 02 My Portfolio
+# My Portfolio
 
 ## Description
 
