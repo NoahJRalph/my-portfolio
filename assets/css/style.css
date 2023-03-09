@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root {
+    --standardDropShadow: drop-shadow(1vmin 1vmin 2vmin rgb(160, 172, 177));
+    --standardBoxShadow: 0.7vmin 0.7vmin rgb(21, 21, 21);
+}
+* {
+    color: white;
+    background-color: black;
+    font-family: "Press Start 2P", serif;
+}
+.title-header, .profile-pic, #about-me h1, #about-me p, .portfolio h1, #portfolio-list, .contact-box{
+    padding: 0.5vmin;
+    margin: 0.5vmin;
+    border-style: solid;
+    border-width: 0.01vmin;
+    border-radius: 1vmin;
+}
+/* Top-right Portfolio title */
+.title-header {
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    font-size: 4vmin;
+    box-shadow: var(--standardBoxShadow);
+    filter: var(--standardDropShadow);
+    transform: rotate(3deg);
+}
+/* Top-left Profile pic */
+.profile-pic {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 10vmin;
+    border-radius: 6vmin;
+    filter: drop-shadow(0vmin 0vmin 2vmin rgb(160, 172, 177));
+}
+/* Upper centered About me */
+#about-me h1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 3vmin;
+    box-shadow: var(--standardBoxShadow);
+    filter: var(--standardDropShadow);
+    transform: rotate(-3deg);
+}
+#about-me p {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    width: 80%;
+    height: 20%;
+    font-size: 1.5vmin;
+    word-wrap: break-word;
+    box-shadow: var(--standardBoxShadow);
+    filter: var(--standardDropShadow);
+}
+/* centered My works/Portfolio */
+.portfolio h1 {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 3vmin;
+    box-shadow: var(--standardBoxShadow);
+    filter: var(--standardDropShadow);
+    transform: rotate(-3deg);
+}
+#portfolio-list {
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    width: 80%;
+    height: 50%;
+    box-shadow: var(--standardBoxShadow);
+    filter: var(--standardDropShadow);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: start;
+}
+.card img {
+    position: relative;
+    border-style: solid;
+    border-color: rgb(181, 181, 181);
+    border-width: 0.5vmin;
+    box-shadow: var(--standardBoxShadow);
+    height: 10vmin;
+    filter: var(--standardDropShadow) grayscale(100%);
+    transition: all 0.5s ease;
+}
+#past {
+    transform: scale(60%);
+}
+#recent {
+    transform: scale(80%);
+}
+/* Hover effects for cards*/
+.card img:hover {
+    filter: grayscale(0%);
+    box-shadow: 5px 5px rgb(100, 100, 100);
+    filter: var(--standardDropShadow);
+}
+/* Bottom-left Contact Me */
+.contact-box {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    font-size: 1vmin;
+    padding: 0vmin 0.5vmin 0vmin 0.5vmin;
+    box-shadow: var(--standardBoxShadow);
+    filter: var(--standardDropShadow);
+}
+/* Background Video */
+.background-video {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* CSS Animation Data */
+.rotate-infinitely {
+    animation: rotation 7s infinite linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
