@@ -17,5 +17,5 @@ The following site was made and deployed following the instruction of my bootcam
 5. All images have proper alt descriptions in HTML.
 6. Cool background video. Was not required.
 7. Impressively few lines to my CSS and HTML. Was not required, I just wanted it that way.
-8. Webpage contents all scale properly with just about any screen size including all the way down to 100x100 and potentially below. Required, but not to the extent that I implemented. Definitely went above and beyond for this feature.
+8. Webpage contents all scale properly with just about any screen size including all the way down to 200x200 and potentially below. Required, but not to the extent that I implemented. Definitely went above and beyond for this feature.
 10. Full ReadMe has been iterated. It me, I'm the ReadMe. Hello. I hope you enjoyed reading my contents.
