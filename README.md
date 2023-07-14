@@ -2,7 +2,7 @@
 
 ## Description
 
-The following site was made and deployed following the instruction of my bootcamp module-2 challenge. The primary focus of the challenge was to create a full portfilio website from scratch that properly advertises my skills to potential employers, and then allow the code to flourish on a deployed site platform.
+The following site was made and deployed using only HTML and CSS following the instruction of my bootcamp module-2 challenge. The primary focus of the challenge was to create a full portfilio website from scratch that properly advertises my skills to potential employers while only using HTML and CSS for to allow the site to use as little memory as possible, and then allow the code to flourish on a deployed site platform, primarily through github pages.
 
 ## Deployment
 
