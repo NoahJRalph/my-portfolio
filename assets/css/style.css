@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root {
-    --standardDropShadow: drop-shadow(1vmin 1vmin 2vmin rgb(160, 172, 177));
+    --standardDropShadow: drop-shadow(1vmin 1vmin 1.5vmin rgb(160, 172, 177));
     --standardBoxShadow: 0.7vmin 0.7vmin rgb(21, 21, 21);
 }
 * {
@@ -8,7 +8,7 @@
     background-color: black;
     font-family: "Press Start 2P", serif;
 }
-.title-header, .profile-pic, #about-me h1, #about-me p, .portfolio h1, #portfolio-list, .contact-box{
+.title-header, .scaling-header, .profile-pic, #about-me h1, #about-me p, .portfolio h1, #portfolio-list, .contact-box{
     padding: 0.5vmin;
     margin: 0.5vmin;
     border-style: solid;
@@ -25,6 +25,14 @@
     filter: var(--standardDropShadow);
     transform: rotate(3deg);
 }
+.scaling-header {
+    position: absolute;
+    top: 9%;
+    right: 10%;
+    font-size: 1vmin;
+    box-shadow: var(--standardBoxShadow);
+    transform: rotate(3deg);
+}
 /* Top-left Profile pic */
 .profile-pic {
     position: absolute;
@@ -32,7 +40,7 @@
     left: 0%;
     height: 10vmin;
     border-radius: 6vmin;
-    filter: drop-shadow(0vmin 0vmin 2vmin rgb(160, 172, 177));
+    filter: drop-shadow(0vmin 0vmin 1vmin rgb(160, 172, 177));
 }
 /* Upper centered About me */
 #about-me h1 {
@@ -54,6 +62,7 @@
     word-wrap: break-word;
     box-shadow: var(--standardBoxShadow);
     filter: var(--standardDropShadow);
+    overflow-y: auto;
 }
 /* centered My works/Portfolio */
 .portfolio h1 {
@@ -73,10 +82,7 @@
     height: 50%;
     box-shadow: var(--standardBoxShadow);
     filter: var(--standardDropShadow);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: start;
+    overflow-y: auto;
 }
 .card img {
     position: relative;
@@ -84,21 +90,17 @@
     border-color: rgb(181, 181, 181);
     border-width: 0.5vmin;
     box-shadow: var(--standardBoxShadow);
-    height: 10vmin;
-    filter: var(--standardDropShadow) grayscale(100%);
+    height: 7vmin;
+    filter: grayscale(100%);
     transition: all 0.5s ease;
-}
-#past {
-    transform: scale(60%);
-}
-#recent {
-    transform: scale(100%);
+    border-radius: 1vmin;
+    padding: 0vmin;
+    margin: 0.5vmin;
 }
 /* Hover effects for cards*/
 .card img:hover {
     filter: grayscale(0%);
     box-shadow: 5px 5px rgb(100, 100, 100);
-    filter: var(--standardDropShadow);
 }
 /* Bottom-left Contact Me */
 .contact-box {
@@ -108,7 +110,6 @@
     font-size: 1vmin;
     padding: 0vmin 0.5vmin 0vmin 0.5vmin;
     box-shadow: var(--standardBoxShadow);
-    filter: var(--standardDropShadow);
 }
 /* Background Video */
 .background-video {
