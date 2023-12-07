@@ -18,46 +18,48 @@
 <!--Actual code of site-->
 <body>
     <main>
-        <!--top-right animated text box -->
-        <p class="title-header rotate-forthback">Noah's Portfolio</p>
-        <p class="scaling-header rotate-forthback">Try scaling this window!</p>
-        <!--Top-left profile image-->
-        <img class="profile-pic rotate-infinitely" src="./assets/images/profilePic.png" alt="Noah's spinning profile image."/>
+        <div>
+            <!--top-right animated text box -->
+            <p class="title-header rotate-forthback">Noah's Portfolio</p>
+            <p class="scaling-header rotate-forthback">Try scaling this window!</p>
+            <!--Top-left profile image-->
+            <img class="profile-pic rotate-infinitely" src="./assets/images/profilePic.png" alt="Noah's spinning profile image."/>
+        </div>
         <!--About Me-->
-        <section id="about-me">
-            <h1 class="rotate-backforth"><a href="#about-me p">About me:</a></h1>
-            <section>
-                <p>I'm a tech-inclined individual who is certified in Front-End Web Development through the University of Oregon! I am passionate about effective solution development, project clarity, ease of access, accessibility, efficiency, and scalability! Through the U. of O., I am certified to develop working products built using using HTML, JS, CSS, Node.js, Chakra, Figma, MongoDB, MySQL, Express, JQuery, React, etc..<br><!--Linebreak--><br>Also I have been working in game development as a hobby for the last 8 years of my life, and have released finished projects with thousands of downloads including (but not limited to): addons, mods, utilities, modpacks, and full servers for popular games such as Minecraft, Elder Scrolls V: Skyrim, Fallout New Vegas, XCOM 2, Darkest Dungeon, and others; Working in languages such as: Java, Shell, CRON, Zenscript, Papyrus, CFG, INI, JSON, and more!</p>
-            </section>
-        </section>
-        <!--Portfolio-->
-        <section class="portfolio">
-            <h1 class="rotate-backforth"><a href="#portfolio-list">My work:</a></h1>
-            <section id="portfolio-list">
-                <a class="card" href="https://www.nexusmods.com/newvegas/mods/73545"><img src="./assets/images/weapon-mod-menu-ttw.png" alt="Noah's fork of Weapon Mod Menu for Fallout: New Vegas!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/messengers-return-2-server"><img src="./assets/images/petrinova-online.png" alt="Noah's hand-built Linux Minecraft server!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/my-react-portfolio"><img src="./assets/images/react-portfolio.png" alt="Noah's portfolio built in React!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/just-another-text-editor"><img src="./assets/images/jate-editor.png" alt="Noah's demonstration PWA text editor!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/project-3-bestgroup"><img src="./assets/images/brainSync-final.png" alt="An accessible reaction-based social site made for Noah's bootcamp."/></a>
-                <a class="card" href="https://github.com/NoahJRalph/example-social-network-api"><img src="./assets/images/social-network-backend.png" alt="Noah's demonstration MongoDB social network backend!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/regex-help-gist"><img src="./assets/images/regex-help-gist.png" alt="Noah's regex help gist!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/e-commerce-back-end"><img src="./assets/images/e-commerce-backend.png" alt="Noah's demonstration SQL e-commerce backend!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/example-employee-db"><img src="./assets/images/employee-database.png" alt="Noah's demonstration SQL employee database!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/noahjralph-note-taker"><img src="./assets/images/note-taker.png" alt="Noah's demonstration note taker!"/></a>
-                <a class="card" href="https://github.com/NoahJRalph/svg-logo-maker"><img src="./assets/images/svg-logo-maker.png" alt="Noah's demonstration SVG generator!"/></a>
-                <a class="card" href="https://noahjralph.github.io/weather-dashboard/"><img src="./assets/images/weather-dashboard.png" alt="Noah's demonstration weather-dashboard!"/></a>
-                <a class="card" href="https://github.com/BrianMorse1/group-project-chat"><img src="./assets/images/brainSync.png" alt="Project-oriented group chat project made for Noah's cert camp."/></a>
-                <a class="card" href="https://noahjralph.github.io/work-day-planner/"><img src="./assets/images/day-planner.png" alt="Noah's demonstration day planner!"/></a>
-                <a class="card" href="https://noahjralph.github.io/interview-quiz-I/"><img src="./assets/images/demo-interview-quiz.png" alt="Noah's demonstration CSS-less interview quiz!"/></a>
-                <a class="card" href="https://noahjralph.github.io/randomized-password-generator/"><img src="./assets/images/password-generator.png" alt="A demonstration fancy password generator (with options)."/></a>
-                <a class="card" href="https://github.com/NoahJRalph/nodejs-readme-generator"><img src="./assets/images/readme-generator.png" alt="Noah's demonstration read me generator!"/></a>
-                <a class="card" href="https://github.com/andrewmuhn/harry-potter-spell-book"><img src="./assets/images/hp-spell-book.png" alt="A Harry Potter-themed Spell Book project made for Noah's cert camp."/></a>
-                <a class="card" href="https://noahjralph.github.io/my-portfolio/"><img src="./assets/images/portfolio.png" alt="Noah's portfolio built using HTML!"/></a>
-                <a class="card" href="https://noahjralph.github.io/horiseon-code-refactoring/"><img src="./assets/images/horiseon.png" alt="Horiseon landing page: a bootcamp code refactoring challenge."/></a>
-                <a class="card" href="https://noahjralph.github.io/basic-html-landing-page/"><img src="./assets/images/basic-landing-page.png" alt="Noah's demonstration landing page for a support site."/></a>
-                <a class="card" href="https://noahjralph.github.io/prework-study-guide/"><img src="./assets/images/pre-work study guide.png" alt="Noah's Pre-Camp Study Guide he built for his certification camp."/></a>
-            </section>
-        </section>
+        <div class="content">
+            <div id="about-me">
+                <h1 class="rotate-backforth"><a href="#about-me p">About me:</a></h1>
+                <p>I'm a tech-inclined individual who is certified in Front-End Web Development through the University of Oregon! I am passionate about effective solution development, project clarity, ease of access, accessibility, efficiency, and scalability! Through the U. of O., I am certified to develop working products built using using HTML, JS, CSS, Node.js, Chakra, Figma, MongoDB, MySQL, Express, JQuery, React, etc..<br><!--New Paragraph--><br>Also I have been working in game development as a hobby for the last 8 years of my life, and have released finished projects with thousands of downloads including (but not limited to): addons, mods, utilities, modpacks, and full servers for popular games such as Minecraft, Elder Scrolls V: Skyrim, Fallout New Vegas, XCOM 2, Darkest Dungeon, and others; Working in languages such as: Java, Shell, CRON, Zenscript, Papyrus, CFG, INI, JSON, and more!</p>
+            </div>
+            <!--Portfolio-->
+            <div class="portfolio">
+                <h1 class="rotate-backforth"><a href="#portfolio-list">My work:</a></h1>
+                <section id="portfolio-list">
+                    <a class="card" href="https://www.nexusmods.com/newvegas/mods/73545"><img src="./assets/images/weapon-mod-menu-ttw.png" alt="Noah's fork of Weapon Mod Menu for Fallout: New Vegas!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/messengers-return-2-server"><img src="./assets/images/petrinova-online.png" alt="Noah's hand-built Linux Minecraft server!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/my-react-portfolio"><img src="./assets/images/react-portfolio.png" alt="Noah's portfolio built in React!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/just-another-text-editor"><img src="./assets/images/jate-editor.png" alt="Noah's demonstration PWA text editor!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/project-3-bestgroup"><img src="./assets/images/brainSync-final.png" alt="An accessible reaction-based social site made for Noah's bootcamp."/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/example-social-network-api"><img src="./assets/images/social-network-backend.png" alt="Noah's demonstration MongoDB social network backend!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/regex-help-gist"><img src="./assets/images/regex-help-gist.png" alt="Noah's regex help gist!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/e-commerce-back-end"><img src="./assets/images/e-commerce-backend.png" alt="Noah's demonstration SQL e-commerce backend!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/example-employee-db"><img src="./assets/images/employee-database.png" alt="Noah's demonstration SQL employee database!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/noahjralph-note-taker"><img src="./assets/images/note-taker.png" alt="Noah's demonstration note taker!"/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/svg-logo-maker"><img src="./assets/images/svg-logo-maker.png" alt="Noah's demonstration SVG generator!"/></a>
+                    <a class="card" href="https://noahjralph.github.io/weather-dashboard/"><img src="./assets/images/weather-dashboard.png" alt="Noah's demonstration weather-dashboard!"/></a>
+                    <a class="card" href="https://github.com/BrianMorse1/group-project-chat"><img src="./assets/images/brainSync.png" alt="Project-oriented group chat project made for Noah's cert camp."/></a>
+                    <a class="card" href="https://noahjralph.github.io/work-day-planner/"><img src="./assets/images/day-planner.png" alt="Noah's demonstration day planner!"/></a>
+                    <a class="card" href="https://noahjralph.github.io/interview-quiz-I/"><img src="./assets/images/demo-interview-quiz.png" alt="Noah's demonstration CSS-less interview quiz!"/></a>
+                    <a class="card" href="https://noahjralph.github.io/randomized-password-generator/"><img src="./assets/images/password-generator.png" alt="A demonstration fancy password generator (with options)."/></a>
+                    <a class="card" href="https://github.com/NoahJRalph/nodejs-readme-generator"><img src="./assets/images/readme-generator.png" alt="Noah's demonstration read me generator!"/></a>
+                    <a class="card" href="https://github.com/andrewmuhn/harry-potter-spell-book"><img src="./assets/images/hp-spell-book.png" alt="A Harry Potter-themed Spell Book project made for Noah's cert camp."/></a>
+                    <a class="card" href="https://noahjralph.github.io/my-portfolio/"><img src="./assets/images/portfolio.png" alt="Noah's portfolio built using HTML!"/></a>
+                    <a class="card" href="https://noahjralph.github.io/horiseon-code-refactoring/"><img src="./assets/images/horiseon.png" alt="Horiseon landing page: a bootcamp code refactoring challenge."/></a>
+                    <a class="card" href="https://noahjralph.github.io/basic-html-landing-page/"><img src="./assets/images/basic-landing-page.png" alt="Noah's demonstration landing page for a support site."/></a>
+                    <a class="card" href="https://noahjralph.github.io/prework-study-guide/"><img src="./assets/images/pre-work study guide.png" alt="Noah's Pre-Camp Study Guide he built for his certification camp."/></a>
+                </section>
+            </div>
+        </div>
         <!--Contact me box-->
         <section class="contact-box">
             <h1>Contact me!</h1>
